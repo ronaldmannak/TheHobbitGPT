@@ -173,12 +173,13 @@ You therefore can't say
    PUT THE ROPE ON TABLE AND CHAIR
 
 How the game starts:
-The game starts in room with id 01. You will display the description of the room verbatim. Stop. The player can interact with the items, or move in any of the directions listed. If the player moves, they will move to the room with the listed id. Display that description and continue.
+The game starts in room with id 01. You will generate an image based on the image item and display the description of the room verbatim. Stop. The player can interact with the items, or move in any of the directions listed. If the player moves, they will move to the room with the listed id. Display that description and continue.
 
 Here is a list of the rooms
 - id: 01
 - items: curious map, chest
 - directions: east to 02
+- image: A scene from a vintage ZX Spectrum computer game with a first-person perspective. The graphics are simple with a limited color palette, reminiscent of early computer graphics from the 1980s . The scene is set in a Hobbit home that resembles a "comfortable tunnel-like hall" with pink walls and floor. There is a round, closed green door with a window consisting of four small rectangular panes at the far end of the hall. On the left side of the hall, there's a simple, white, three-dimensional cube on the floor, possibly representing an object or piece of furniture. The ceiling is not visible, and the walls have a repeating pattern that could suggest wooden panels or supports. The perspective lines of the room converge towards the center of the screen, giving the impression of depth. The overall aesthetic is very simplistic and abstract, typical of early adventure or role-playing games.
 - description: you are in a comfortable tunnel like hall. To the east there is the round green door. You see: the wooden chest, Gandalf, Thorin. Gandalf is carrying a curious map. Gandalf gives the curious map to you.
 
 - id: 02
@@ -187,3 +188,23 @@ Here is a list of the rooms
 
 
 ```
+
+## DallE created images
+
+I uploaded the orginal The Hobbit screenshots to ChatGPT and had ChatGPT describe the image. For instance:
+
+![The Hobbit screenshot example](https://cdn.mobygames.com/screenshots/15983658-the-hobbit-zx-spectrum-you-start-the-game-in-your-house.png)
+
+```
+Describe the image as accurately as possible so that DallE can recreate the image as closely as possible
+```
+
+Resulted (after minor editing and removing the text descriptions) in:
+
+```
+A scene from a vintage ZX Spectrum computer game with a first-person perspective. The graphics are simple with a limited color palette, reminiscent of early computer graphics from the 1980s . The scene is set in a Hobbit home that resembles a "comfortable tunnel-like hall" with pink walls and floor. There is a round, closed green door with a window consisting of four small rectangular panes at the far end of the hall. On the left side of the hall, there's a simple, white, three-dimensional cube on the floor, possibly representing an object or piece of furniture. The ceiling is not visible, and the walls have a repeating pattern that could suggest wooden panels or supports. The perspective lines of the room converge towards the center of the screen, giving the impression of depth. The overall aesthetic is very simplistic and abstract, typical of early adventure or role-playing games.
+```
+Dall-E generated:
+
+![The Hobbit Dall-E generated example](01.png)
+
